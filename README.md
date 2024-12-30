@@ -1,6 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Hatchdev-Journey
 =======
+=======
+>>>>>>> 0774d501c10ad63d1227e4591078bb70c73a772a
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -53,4 +56,7 @@ export default tseslint.config({
 ```
 
 <video src={} autoplay loop muted>
+<<<<<<< HEAD
 >>>>>>> 70d4daa (Adding files)
+=======
+>>>>>>> 0774d501c10ad63d1227e4591078bb70c73a772a
