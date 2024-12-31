@@ -30,6 +30,7 @@ import Confetti from "./assets/confetti-svgrepo-com.svg"
 import Github from "./assets/github-142-svgrepo-com.svg"
 import LinkedIn from "./assets/linkedin-svgrepo-com.svg"
 import Movy from "./assets/image.png"
+import Dijk from "./assets/dijk.png"
 import './App.css'
 
 
@@ -81,7 +82,7 @@ function App() {
           </div>
       </header>
       <main className="relative z-10 bg-white">
-        <section style={sectionStyle} className="py-8">
+        <section style={sectionStyle} >
           <h1 className="text-2xl font-semibold">Wagwan!!!</h1>
           <div className="flex flex-col md:flex-row">
             <div className="md:w-1/2">
@@ -89,7 +90,7 @@ function App() {
             </div>
             <div className="md:w-1/2">
               <h1 className="text-lg mt-10">
-                <span className="text-3xl font-semibold">T</span>his is me in my software career with bunch of knowledge that I didn't know how to use.
+                <span className="text-3xl font-semibold">T</span>his is me in my software career with bunch of knowledge that I didn't know how to use or what to do with it. It was just there, playing snooker in my head.
               </h1>
             </div>
           </div>
@@ -99,7 +100,7 @@ function App() {
           <div className="flex flex-col md:flex-row">
             <div className="md:w-1/2">
               <h1 className="text-lg mt-10">
-                Earlier this year, My brother sent a flier that the company he work for, Nithub, is having a free .......
+                So, earlier this year, My brother sent a flier that the company he work for, Nithub, is having a free 9-months Full Stack training. At first I was skeptical to apply but my brother encouraged me. I applied and I got in. <span className="text-gray-700 text-sm">P.S: Not my brothers' influence</span>
               </h1>
             </div>
             <div className="md:w-1/2 ">
@@ -117,18 +118,19 @@ function App() {
                 <h2 className="text-3xl font-dancing-script ">HTTPS</h2>
                 <img src={HTTPS} alt="https" className="w-10 ml-4" />
               </div>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum dolorem eius nesciunt, consectetur nam amet minus dicta possimus fugit, in aliquam repudiandae totam nobis nihil quis excepturi voluptatem odit esse.</p>
+              <p>We started of with the concepts of https, learnt about headers, protocol,query and response status and their meanings. And to every one who think they know about https, tbh there's more to it, because I was learning things that are below the surface level of the normal "www.google.com" that we know.</p>
             </div>
             <div className="flex justify-center items-center">
               <img src={Pathway} alt="" className="w-40 rotate-180" />
             </div>
             <div className="flex flex-col md:flex-row">
               <div className="md:w-1/2">
+                <h2 className="text-3xl font-dancing-script ">OOP- Object Oriented Programming</h2>
                 <img src={OOP1} alt="oop" className="rounded-xl w-full"/>
               </div>
               <div className="md:w-1/2">
-                <h1 className="text-lg ml-4">
-                  Learning OOP is like nbringing our codes ........
+                <h1 className="text-lg ml-2">
+                Then we went on to learning about OOP - Object Oriented Programming (typescript - was the language we used). I learnt about Classes and Objects, Interface, Abstraction, Encapsulation, polymorphism. OOP in layman sense means bringing programming into our daily life. Abstraction concept can be related to using remote controller it works and we're fine with it, we do not care what goes on behind the clicking of the button or even the motherboard behind the casing.
                 </h1>
               </div>
             </div>
@@ -143,18 +145,17 @@ function App() {
           </div>
         </section>
 
-        <section style={{ ...sectionStyle, transform: `translateY(${scrollY * 0.2}px)` }} className="py-4">
+        <section style={{ ...sectionStyle, transform: `translateY(${scrollY * 0.2}px)` }} >
           {/* DSA section */}
           <div className="flex justify-center items-center">
             <img src={Pathway} alt="" className="w-40 rotate-180 " />
           </div>
           <div>
             <div className="flex">
-              <h2 className="text-3xl font-dancing-script ">DSA - Data Structures and Algorithm</h2>
-              <img src={DSA} alt="https" className="w-10 ml-4" />
+              <h2 className="text-3xl font-dancing-script ">DSA - Data Structures and Algorithm <img src={DSA} alt="https" className="w-10 ml-4" /></h2>
             </div>
             <div>
-              <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non magnam sequi nesciunt possimus iure dolores quas voluptatibus enim, suscipit praesentium tenetur a ad nam eaque adipisci esse minus temporibus tempore.</h2>
+              <h2>Moving on to one of the hardest, trickest and fun part of the programme---- DSA... Omo, that was where I began to question my career in becoming a Software Engineer. DSA was like the eye opener,that I had a lot to learn. From learning Arrays to Queues, Stack, linked list, and my ever looping circle linkedlist, to learning about trees; Binary searh trees using BFS and DFS. The fun part was the sorting algorithm mainly because i was able to write them by heart apart form merge sort. Using typescript made life more stressful #pythonForDSA. During this, we were given a fun project which include creating a map for Unilag using Dijkstra Algorithm P.S I'm ashamed of how the frontend is, so I'll just drop snippet of how the backend and the algorithm is structured. Shout out to David Mark(pka coding boy) and David Dada for explaining it so well</h2>
             </div>
             <div className="flex flex-row md:justify-center overflow-x-scroll hide-scrollbar gap-4 mt-6 mb-4 text-sm font-dancing-script">
               <div className="flex-shrink-0 md:w-72 w-96">
@@ -187,6 +188,12 @@ function App() {
                   Quick Sort
                 </span>
               </div>
+              <div className="flex-shrink-0 md:w-72 w-96">
+                <img src={Dijk} alt="" className="rounded w-full" onClick={() => handleClick(quickSort)} />
+                <span className="block">
+                  Dijkstra Algorithm
+                </span>
+              </div>
             </div>
 
             <h2 className="font-dancing-script text-2xl ml-2 animate-bounce">
@@ -204,11 +211,10 @@ function App() {
           </div>
           <div>
             <div className="flex">
-              <h2 className="text-3xl font-dancing-script ">REACT Framework</h2>
-              <img src={React} alt="https" className="w-10 ml-4" />
+              <h2 className="text-3xl font-dancing-script ">REACT Framework <img src={React} alt="https" className="w-10 ml-4" /></h2>
             </div>
             <div>
-              <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non magnam sequi nesciunt possimus iure dolores quas voluptatibus enim, suscipit praesentium tenetur a ad nam eaque adipisci esse minus temporibus tempore.</h2>
+              <h2>Next, we went on to learn React with our tutor David(pka Drex- why does it sound like a name in Jurassic Park). Every frontend developer like I enjoyed this part. It was really fun for me. From the team project to the hackathon(funny how i lead the team) shout out to Fari, Lawrence and Jessica. And also to Toyiba (I haven't still gotten over the Purple bg you choose over my black for the WeatherWise Project). During this section, Learnt so much about react hooks, creating reusable components, and API calls, learnt Tailwind too, bye bye to Vannila css</h2>
               <p className="mt-2 font-semibold text-xl">Here are the projects during the React Lesson</p>
             </div>
 
@@ -228,7 +234,8 @@ function App() {
               </div>
               <div className="md:w-1/2">
                 <h1 className="text-lg ml-4">
-                  WeatherWise with Toyiba ........
+                  WeatherWise with Toyiba
+                  This was the first frontend react project I built alongside Toyiba. I learnt how to use React hooks such as "UseContext, UseState, UseEffect", and also creating reusable components for the dashboard page.
                 </h1>
                 <p>
                   <a href="http://" className="underline text-blue-400 ml-4">WeatherWise</a>
@@ -236,7 +243,7 @@ function App() {
               </div>
             </div>
             <h2 className="font-dancing-script text-2xl">
-              The Hatchdev
+              The Hackathon
             </h2>
             <div className="flex flex-col md:flex-row ml-3">
               <div className="md:w-1/2 relative">
@@ -244,7 +251,7 @@ function App() {
               </div>
               <div className="md:w-1/2">
                 <h1 className="text-lg ml-4">
-                  The Hatchdev ........
+                  For this, my team built a recipe site that allows users input the ingredients they have and it will generate recipe for foods. What this solve, is that it curbs wastage of food thereby reducing pollution.
                 </h1>
                 <p>
                   <a href="https://sof.vercel.app/" className="underline text-blue-400 ml-4">Save Our Food(SOF)</a>
@@ -267,7 +274,8 @@ function App() {
               <img src={Backend} alt="https" className="w-10 ml-4" />
             </div>
             <div>
-              <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non magnam sequi nesciunt possimus iure dolores quas voluptatibus enim, suscipit praesentium tenetur a ad nam eaque adipisci esse minus temporibus tempore.</h2>
+              <h2>Now unto learning Database and Backend. This was one of the shortest classes we had but impactful. Learnt about Relation and non relational database. Different types of databases from Vector db to graph db etc Also learning the Query language, DDL, DML, DCL, TCL. 
+              And lastly we moved on to the backend part, we used nodeJs compiled from Typescript for the backend. I learnt about several modules, file stream, http, path, buffer, os etc. Learnt about RESTful APIs too </h2>
             </div>
             <div className="flex flex-row md:justify-center overflow-x-scroll hide-scrollbar gap-4 mt-6 mb-4 text-sm font-dancing-script">
               <div className="flex-shrink-0 md:w-72 w-96">
@@ -312,7 +320,11 @@ function App() {
               <img src={Confetti} alt="https" className="w-10 ml-4 animate-wiggle" />
             </div>
             <div>
-              <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non magnam sequi nesciunt possimus iure dolores quas voluptatibus enim, suscipit praesentium tenetur a ad nam eaque adipisci esse minus temporibus tempore.</h2>
+              <h2>
+                For my final project, I created a Movie straming site that allows users to stream movies/TV shows. 
+                I used my knowledge as a full stack developer and the project made me level up.
+                One key moment was when I wanted to implement the streak part. I think I rewrote the code like 5 times because I kept on coming up with different solutions.
+              </h2>
             </div>
             <div>
               <img src={Movy} alt="" className="rounded " />
@@ -354,9 +366,9 @@ function App() {
       >
         <div className="container mx-auto px-4">
           <div className="text-center">
-            <h2 className="text-3xl font-dancing-script mb-4">Thanks & Appreciation</h2>
+            <h2 className="text-3xl font-dancing-script mb-2 mt-2">Thanks & Appreciation</h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Thank you for taking the time to explore my HatchDev journey. Special thanks to all the mentors and fellow developers who made this possible.
+            I am grateful to my brother for encouraging me throughout and also to all the friends I made Toyiba, Fari(Always encouraging me to look for more paying opportunities), Alfred(this guy is always happy when there is an error in my code), Lawrence. Looking forward to working with you on more awesome projects.
             </p>
             <p className="mt-2">P.S: You can find the repo to all the source code from the Github Icon below</p>
           </div>
